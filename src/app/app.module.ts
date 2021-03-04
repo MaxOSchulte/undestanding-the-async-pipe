@@ -1,16 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {ReferenceComponent} from './reference/reference.component';
+import {SmartComponent} from './smart/smart.component';
+import {SmartAsyncComponent} from './smart-async/smart-async.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReferenceComponent,
+    SmartComponent,
+    SmartAsyncComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

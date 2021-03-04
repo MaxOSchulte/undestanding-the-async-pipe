@@ -1,0 +1,15 @@
+<h3>Values resolved in the template with async pipe</h3>
+<pre>
+// simple
+{{value$ | async}}
+
+// immutable
+{{immutableValue$ | async | json}}
+
+// mutable
+{{mutableValue$ | async | json}}
+</pre>
+
+<p>
+  The mutable value is only updated, because the other async pipes call the <b>markForCheck</b> method.
+</p>

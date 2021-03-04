@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'understading-async-pipe'`, () => {
+  it(`should have as title 'understanding-async-pipe'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('understading-async-pipe');
+    expect(app.title).toEqual('understanding-async-pipe');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('understading-async-pipe app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('understanding-async-pipe app is running!');
   });
 });
